@@ -6,17 +6,6 @@
 const firstUserResto= new Set(["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]);
 const secondUserResto= new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']);
 
-//education array first user
-const firstUserEdu1 = new Map([['nama','SD 01'],['city','Jakarta'],['graduate','2016']]);
-const firstUserEdu2 = new Map([['nama','SMP 02'],['city','Jakarta'],['graduate','2019']]);
-const firstUserEdu3 = new Map([['nama','SMA 03'],['city','Tangerang'],['graduate',' ']]);
-
-//education array second user
-const secondUserEdu1 = new Map([['nama','SD 02'],['city','Jakarta'],['graduate','2010']]);
-const secondUserEdu2 = new Map([['nama','SMP 03'],['city','Bogor'],['graduate','2013']]);
-const secondUserEdu3 = new Map([['nama','SMA 04'],['city','Surabaya'],['graduate','2016']]);
-const secondUserEdu4 = new Map([['nama','Universitas Maju'],['city','Tangerang'],['graduate',' ']]);
-
 const firstUser = {
     name: "Monica",
     gender: "Female",
@@ -24,7 +13,20 @@ const firstUser = {
     email: "monica@dingdong.com",
     favcolor: ['Yellow', 'Pink', 'White', 'Purple'],
     isHavePet: true,
-    education: firstUserEdu1, firstUserEdu2, firstUserEdu3,
+    education: [
+        { 
+            eduname: 'SD 01', 
+            educity: 'Jakarta', 
+            edugraduate: '2016'},
+        { 
+            eduname: 'SMP 02', 
+            educity: 'Jakarta', 
+            edugraduate: '2019'},
+        { 
+            eduname: 'SMA 03', 
+            educity: 'Tangerang', 
+            edugraduate: null},
+    ],
     favrestaurant: firstUserResto,
 };
 
@@ -35,7 +37,24 @@ const secondUser = {
     email: "wendy@dingdong.com",
     favcolor: ['Blue', 'Black', 'Grey'],
     isHavePet: true,
-    education: secondUserEdu1, secondUserEdu2, secondUserEdu3, secondUserEdu4,
+    education: [
+        { 
+            eduname: 'SD 02', 
+            educity: 'Jakarta', 
+            edugraduate: '2010' },
+        { 
+            eduname: 'SMP 03', 
+            educity: 'Bogor', 
+            edugraduate: '2013' },
+        { 
+            eduname: 'SMA 04', 
+            educity: 'Surabaya', 
+            edugraduate: '2016' },
+        { 
+            eduname: 'Universitas Maju', 
+            educity: 'Tangerang', 
+            edugraduate: null },
+    ],
     favrestaurant : secondUserResto,
 };
 
