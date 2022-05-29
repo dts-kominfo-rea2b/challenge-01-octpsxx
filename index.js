@@ -2,7 +2,7 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
-//restaurant first &second user
+//restaurant array
 const firstUserResto= new Set(["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]);
 const secondUserResto= new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']);
 
@@ -16,7 +16,7 @@ const firstUser = {
     education: [
         { eduname: 'SD 01', educity: 'Jakarta', edugraduate: '2016'},
         { eduname: 'SMP 02', educity: 'Jakarta', edugraduate: '2019'},
-        { eduname: 'SMA 03', educity: 'Tangerang', edugraduate: '-'},
+        { eduname: 'SMA 03', educity: 'Tangerang' },
     ],
   //  favrestaurant : [ new Set(['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'])],
     favrestaurant: firstUserResto,
@@ -33,7 +33,7 @@ const secondUser = {
         { eduname: 'SD 02', educity: 'Jakarta', edugraduate: '2010' },
         { eduname: 'SMP 03', educity: 'Bogor', edugraduate: '2013' },
         { eduname: 'SMA 04', educity: 'Surabaya', edugraduate: '2016' },
-        { eduname: 'Universitas Maju', educity: 'Tangerang', edugraduate: '-' },
+        { eduname: 'Universitas Maju', educity: 'Tangerang' },
     ],
     favrestaurant : secondUserResto,
 };
