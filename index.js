@@ -2,6 +2,10 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
+//restaurant first &second user
+const firstUserResto= new Set(["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"]);
+const secondUserResto= new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy']);
+
 const firstUser = {
     name: "Monica",
     gender: "Female",
@@ -14,10 +18,9 @@ const firstUser = {
         { eduname: 'SMP 02', educity: 'Jakarta', edugraduate: '2019'},
         { eduname: 'SMA 03', educity: 'Tangerang', edugraduate: '-'},
     ],
-    favrestaurant : [ new Set(['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'])],
+  //  favrestaurant : [ new Set(['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'])],
+    favrestaurant: firstUserResto,
 };
-
-
 
 const secondUser = {
     name: "Wendy",
@@ -32,7 +35,7 @@ const secondUser = {
         { eduname: 'SMA 04', educity: 'Surabaya', edugraduate: '2016' },
         { eduname: 'Universitas Maju', educity: 'Tangerang', edugraduate: '-' },
     ],
-    favrestaurant : [ new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy'])],
+    favrestaurant : secondUserResto,
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
